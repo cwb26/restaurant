@@ -34,9 +34,8 @@ body{
 .special {
     background-color: dodgerblue;
     display: grid;
-    grid-template-areas: "terryT terryT"
-                         "sp1 sp2"
-                         "special special";
+    grid-template-areas: "terryT sp1"
+                         "terryT sp2";
     grid-template-columns: 600px 200px;
     grid-template-rows:50px;
 }
@@ -68,4 +67,16 @@ ul {
 
   a:link {
     text-decoration: none;
+  }
+
+  .offer div{
+    background-color: aliceblue;
+    display: inline-block;
+    width:180px;
+    height: 200px;
+  }
+
+  .FeaturedTaco img{
+    width: 100px;
+    height: 100px;
   }
