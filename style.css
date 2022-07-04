@@ -1,10 +1,9 @@
-body{
-    background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#d55db9), to(#a70bef));
-}
 .container {
     display: grid;
-    max-width: 800px;
+    max-width: 1000px;
+    max-height: 2000px;
     position: relative;
+    background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(#d55db9), to(#a70bef));
     margin: auto;
     gap: 10px;
     grid-template-areas: "header header"
@@ -13,8 +12,8 @@ body{
                          "offer offer"
                          "FeaturedTaco FeaturedTaco"
                          "footer footer";
-    grid-template-columns: 800px;
-    grid-template-rows:50px 50px 200px 200px 200px 50px;
+    grid-template-columns: 900px;
+    grid-template-rows:50px 50px 300px 300px 300px 300px;
   }
   
   h1, h2 {
@@ -31,17 +30,25 @@ body{
     background-color: rgb(209, 209, 13);
     grid-area: nav;
   }
+
+  footer h5{
+    text-align: center;
+  }
 .special {
     background-color: dodgerblue;
     display: grid;
-    grid-template-areas: "terryT sp1"
+    position: relative;
+    gap: 10px;
+    /* grid-template-areas: "terryT sp1"
                          "terryT sp2";
     grid-template-columns: 600px 200px;
-    grid-template-rows:50px;
+    grid-template-rows:50px 50px; */
+    grid-row-start: repeat(2,50px);
+    grid-template-columns: 2fr 1fr;
 }
 .special img{
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 300px;
 }
 ul {
     margin: 15px auto;
@@ -53,15 +60,14 @@ ul {
   }
 
   .terryT{
-    display: block;
   font-size: 14px;
   font-style: bold;
-  line-height: 6px;
-  margin-left: -580px;
-  padding: 10px;
-  position: right;
-  top: 100%;
-  width: 60%;
+  line-height: 20px;
+  position:relative;
+  top: -190px;
+  left: 50px;
+  width: 120px;
+  height: 30px;
   background-color: rgb(209, 209, 13);
   }
 
@@ -72,11 +78,18 @@ ul {
   .offer div{
     background-color: aliceblue;
     display: inline-block;
-    width:180px;
-    height: 200px;
+    float: left;
+    width:200px;
+    height: 300px;
+    gap: 10px;
   }
 
-  .FeaturedTaco img{
+  .FeaturedTaco{
+    background-color: aliceblue;
+  }
+
+  footer img{
     width: 100px;
     height: 100px;
+    gap: 20px;
   }
