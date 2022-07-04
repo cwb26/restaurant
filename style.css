@@ -13,7 +13,7 @@ body{
                          "offer offer"
                          "FeaturedTaco FeaturedTaco"
                          "footer footer";
-    grid-template-columns: 200px 400px;
+    grid-template-columns: 800px;
     grid-template-rows:50px 50px 200px 200px 200px 50px;
   }
   
@@ -33,11 +33,16 @@ body{
   }
 .special {
     background-color: dodgerblue;
-    grid-template-areas: inherit;
+    display: grid;
+    grid-template-areas: "terryT terryT"
+                         "sp1 sp2"
+                         "special special";
+    grid-template-columns: 600px 200px;
+    grid-template-rows:50px;
 }
 .special img{
     width: 400px;
-    height: 150px;
+    height: 200px;
 }
 ul {
     margin: 15px auto;
@@ -46,4 +51,21 @@ ul {
  li{
     display: inline-block;
     text-transform: uppercase;
+  }
+
+  .terryT{
+    display: block;
+  font-size: 14px;
+  font-style: bold;
+  line-height: 6px;
+  margin-left: -580px;
+  padding: 10px;
+  position: right;
+  top: 100%;
+  width: 60%;
+  background-color: rgb(209, 209, 13);
+  }
+
+  a:link {
+    text-decoration: none;
   }
